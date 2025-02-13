@@ -5,18 +5,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.2/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <script>
+let mic= p5.Audio () ;// guarda a la variable mic una entrada de audio p5.js
 function setup() {
   createCanvas(windowWidth,windowHeight);
+    mic.start();// activa el micròfon
 }
 function draw() {
+    let vol=mic.getLevel();
+    let h=map(vol,0,1,0,400);
   background(0, 255, 155);
   fill(217, 190, 150);
   ellipse(windowWidth/2,windowHeight/2,300,300);
   fill(42, 31, 13);
   ellipse(windowWidth/2-70,windowHeight/2-60,50,50);
   ellipse(windowWidth/2+70,windowHeight/2-60,50,50);
-  arc(windowWidth/2,windowHeight/2+90,100,70,0,PI);
+  arc(windowWidth/2,windowHeight/2+90,100,40+h,0,PI);
 }
     </script>
 </body>
