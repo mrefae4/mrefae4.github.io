@@ -16,11 +16,11 @@ let mic;
 }
 function draw() {
   let vol=mic.getLevel();
-  let h=map(vol,0,1,0,400);
-  background(0, 255, 155);
-  fill(217, 190, 150);
+  let h=map(vol,0,1,0,800);
+  background(10-h, 16, 102 );
+  fill(110, 95, 48-h );
   ellipse(windowWidth/2,windowHeight/2,300,300);
-  fill(42, 31, 13);
+  fill(12, 240, 247+h);
   ellipse(windowWidth/2-70,windowHeight/2-60,50,50);
   ellipse(windowWidth/2+70,windowHeight/2-60,50,50);
   arc(windowWidth/2,windowHeight/2+90,100,50+h,0,PI);
