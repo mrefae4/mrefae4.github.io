@@ -32,8 +32,8 @@ function draw() {
   //temblar esta sumat a l'alçada i l'amplada de la cara i canviara aleatoriament entre 10 i 50 pixels
   fill(12+h*2, 240, 247+h);
   ellipse(windowWidth/2-70,windowHeight/2-60-h,50,50);//ull dret
-  ellipse(windowWidth/2+70,windowHeight/2-60+h,50,50);//ull esquerra
-  arc(windowWidth/2,windowHeight/2+90,100,50+h,0,PI);//boca
+  ellipse(windowWidth/2+70,windowHeight/2-60+h,50+h,50);//ull esquerra
+  arc(windowWidth/2,windowHeight/2+90-h,100,50+h,0,PI);//boca
   console.log(h);
 }
     </script>
