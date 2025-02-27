@@ -27,7 +27,7 @@ sinus=(sin(frameCount * 0.1);// la variable sinus crea numeros entre -1 i +1
   // entre 0 50
   let vol=mic.getLevel();
   let h=map(vol,0,1,0,800);
-  background(10-h, 16, 102 );
+  background(sinus,255-sinus,102);
   fill(110-h, 95+h, 48-h );//color cara
   ellipse(windowWidth/2,windowHeight/2-h,300+sinus,250+sinus);//cara
   //el primer que hi ha entre parentesis es diu paràmetre i es la posició x del centre de la cara
