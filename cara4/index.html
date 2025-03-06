@@ -34,7 +34,7 @@ function draw() {
   let noise3= noise (t+200) *255;
 
   temblar=random(10,50);
- sinus=sin(frameCount * 0.1);//la variable sinus crea numeros entre -1 i +1
+ let movsinus=sin(frameCount * 0.1);//la variable sinus crea numeros entre -1 i +1
   //frameCount esta contant els fotogrames i fa 60 a sinus per segon
   //això vol dir 60 numeros entre -1 i 1 ordenats per segon
   let movsinus=map(sinus,-1,1,0,255);
