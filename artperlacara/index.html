@@ -193,6 +193,8 @@ function drawDifferentArt(dominant, intensity) {
   // Utilitza una estructura switch per triar el dibuix en funció del sentiment detectat
   switch (dominant) {
     case "happy":
+      stroke(255,200,0);//groc
+      fill(intensity*255,intensity*127,intensity*68);
       beginShape();
 vertex(281, 275.1875);
 vertex(287, 262.1875);
